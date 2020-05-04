@@ -2,8 +2,7 @@
 var driver = {};
 
 function updateDriverWithKeyAndValue (driver, key, value) {
-  driver.update 
-  return driver;
+  return driver.assign({},driver,{[key]: value});
 }
 
 function destructivelyUpdateDriverWithKeyAndValue(driver, key, value) {
